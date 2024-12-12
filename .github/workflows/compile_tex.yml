@@ -18,3 +18,6 @@ jobs:
         with:
           name: resume
           path: resume.pdf
+      - name: copy to site
+        run: cp resume.pdf site/resume.pdf
+      - uses: stefanzweifel/git-auto-commit-action@v5
